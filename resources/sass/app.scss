@@ -1,0 +1,5 @@
+// Definizione del percorso font interno al pacchetto node_modules
+$font-path: 'bootstrap-italia/dist/fonts';
+
+// Importazione del framework
+@import '../../node_modules/bootstrap-italia/src/scss/bootstrap-italia';
