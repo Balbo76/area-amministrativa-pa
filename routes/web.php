@@ -27,6 +27,7 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('logout')->midd
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', function () { return view('admin.dashboard'); })->name('admin.dashboard');
     Route::get('/profile', function () { return view('admin.profile'); })->name('admin.profile');
+    Route::get('/pc-icons', function () { return view('admin.pc-icons'); })->name('admin.pc-icons');
 });
 
 

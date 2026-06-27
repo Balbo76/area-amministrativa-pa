@@ -29,6 +29,11 @@
                         Mio Profilo
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark py-2 px-3 rounded {{ request()->routeIs('admin.pc-icons') ? 'bg-primary text-white font-weight-bold' : '' }}" href="{{ route('admin.pc-icons') }}">
+                        Icone
+                    </a>
+                </li>
             </ul>
         </nav>
 
