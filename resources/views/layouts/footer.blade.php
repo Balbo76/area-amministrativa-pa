@@ -6,12 +6,12 @@
                 <div class="row clearfix">
                     <div class="col-sm-12">
                         <div class="it-brand-wrapper">
-                            <a href="#" data-focus-mouse="false">
+                            <a href="{{ url('/') }}" data-focus-mouse="false">
                                 <svg class="icon">
                                     <use href="{{ asset('bootstrap-italia/dist/svg/sprites.svg#it-code-circle') }}"></use>
                                 </svg>
                                 <div class="it-brand-text">
-                                    <h2>Lorem Ipsum</h2>
+                                    <h2>Protezione Civile Veneto</h2>
                                     <h3 class="d-none d-md-block">Direzione Protezione Civile e Polizia Locale - Ufficio Pianificazione</h3>
 
                                 </div>
@@ -44,18 +44,34 @@
                         <div class="pb-2">
                             <h4>Seguici su</h4>
                             <ul class="list-inline text-left social">
+
                                 <li class="list-inline-item">
-                                    <a class="p-2 text-white" href="#"><svg class="icon icon-sm icon-white align-top"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-designers-italia"></use></svg><span class="visually-hidden">Designers Italia (link esterno)</span></a>
+                                    <a class="p-2 text-white" target="_blank" href="{{ url('https://twitter.com/PC_Veneto') }}">
+                                        <svg class="icon icon-sm icon-white align-top">
+                                            <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
+                                        </svg>
+                                        <span class="visually-hidden">X (link esterno)</span>
+                                    </a>
                                 </li>
+
                                 <li class="list-inline-item">
-                                    <a class="p-2 text-white" href="#"><svg class="icon icon-sm icon-white align-top"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use></svg><span class="visually-hidden">X (link esterno)</span></a>
+                                    <a class="p-2 text-white" target="_blank" href="{{ url('https://www.facebook.com/ProtezioneCivileRegioneDelVeneto') }}">
+                                        <svg class="icon icon-sm icon-white align-top">
+                                            <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Facebook (link esterno)</span>
+                                    </a>
                                 </li>
+
                                 <li class="list-inline-item">
-                                    <a class="p-2 text-white" href="#"><svg class="icon icon-sm icon-white align-top"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-medium"></use></svg><span class="visually-hidden">Medium (link esterno)</span></a>
+                                    <a class="p-2 text-white" target="_blank" href="{{ url('https://www.instagram.com/protezionecivileregioneveneto/') }}">
+                                        <svg class="icon icon-sm icon-white align-top">
+                                            <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-instagram"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Instagram (link esterno)</span>
+                                    </a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <a class="p-2 text-white" href="#"><svg class="icon icon-sm icon-white align-top"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-behance"></use></svg><span class="visually-hidden">Behance (link esterno)</span></a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>

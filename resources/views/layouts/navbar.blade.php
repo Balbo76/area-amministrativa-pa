@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="it-header-slim-wrapper-content">
-                        <a class="d-lg-block navbar-brand" target="_blank" href="#" aria-label="Vai al portale {Nome della Regione} - link esterno - apertura nuova scheda" title="Vai al portale {Nome della Regione}">Nome della Regione</a>
+                        <a class="d-lg-block navbar-brand" href="{{ url('/') }}" aria-label="Vai al portale Protezione Civile Veneto" title="Vai al portale Protezione Civile Veneto">Protezione Civile Veneto</a>
                         <div class="it-header-slim-right-zone" role="navigation">
                             <div class="nav-item dropdown">
                                 <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
@@ -27,10 +27,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="btn btn-primary btn-icon btn-full" href="../servizi/accesso-servizio.html" data-element="personal-area-login">
+                            <a class="btn btn-primary btn-icon btn-full" href="{{ route('login') }}" data-element="personal-area-login">
                             <span class="rounded-icon" aria-hidden="true">
                               <svg class="icon icon-primary">
-                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                                <use xlink:href="/assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
                               </svg>
                             </span>
                                 <span class="d-none d-lg-block">Accedi all'area personale</span>

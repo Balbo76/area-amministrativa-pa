@@ -2,6 +2,12 @@
 @section('title', 'Pannello di controllo')
 @section('page-title', 'Dashboard Amministrativa')
 @section('content')
+    <div class="row">
+        <div class="alert alert-danger" role="alert">
+            <x-pc-icon name="rischio-meteo" size="icon-lg" class="me-2" />
+            <strong>Allerta Critica:</strong> È in corso un evento meteo intenso sulle zone montane.
+        </div>
+    </div>
     <div class="row g-4 mb-4">
         <div class="col-md-6 col-lg-4">
             <div class="card p-4 shadow-sm border-start border-primary border-4 bg-white">
