@@ -6,7 +6,7 @@
     <title>Autenticazione - @yield('title')</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body class="bg-light d-flex flex-column align-items-center vh-100">
+<body class="bg-light align-items-center vh-100">
 @include('layouts.navbar')
 <div class="container">
     <div class="row justify-content-center">

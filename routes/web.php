@@ -22,7 +22,9 @@ Route::middleware('guest')->group(function () {
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
 
 // Area Amministrativa Protetta dal Middleware dei Permessi
-Route::prefix('admin')->middleware(['auth', 'permessi.admin'])->group(function () {
+// PRIMA: Route::prefix('admin')->middleware(['auth', 'permessi.admin'])->group(function () {
+// ADESSO (Senza filtri):
+Route::prefix('admin')->group(function () {
     Route::get('/dashboard', function () { return view('admin.dashboard'); })->name('admin.dashboard');
     Route::get('/profile', function () { return view('admin.profile'); })->name('admin.profile');
 });

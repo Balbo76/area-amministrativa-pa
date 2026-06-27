@@ -1,5 +1,5 @@
-// Definizione del percorso font interno al pacchetto node_modules
-$font-path: 'bootstrap-italia/dist/fonts';
+// Forza il percorso dei font verso la cartella pubblica statica
+$font-path: '/bootstrap-italia/dist/fonts';
 
 // Importazione del framework
-@import '../../node_modules/bootstrap-italia/src/scss/bootstrap-italia';
+@import 'bootstrap-italia/src/scss/bootstrap-italia';
