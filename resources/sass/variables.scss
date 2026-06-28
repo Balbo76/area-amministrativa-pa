@@ -54,14 +54,14 @@ $font-size-base:                  1rem;                                       //
 $font-weight-base:                400;                                        // Spessore del testo normale (Regular)
 $line-height-base:                1.5;                                        // Interlinea per garantire l'accessibilità e la leggibilità
 $headings-font-weight:            700;                                        // Spessore dei titoli (Bold)
-$headings-color:                  #1c2024;                                    // Colore specifico per i tag da H1 a H6
+$headings-color:                  #ffffff;                                    // Colore specifico per i tag da H1 a H6
 
 // ------------------------------------------------------------------------------
 // 🎛️ 4. STRUTTURA DELLA PAGINA E SFONDI (Sfondi Semantici PA)
 // ------------------------------------------------------------------------------
 // Controlla l'aspetto cromatico macroscopico del sito e le macro-sezioni.
-// $body-bg:                         #ffffff; // Colore di sfondo dell'intera pagina web
-// $body-color:                      #1c2024; // Colore principale di tutto il testo (garantisce alto contrasto)
+$body-bg:                         #ffffff; // Colore di sfondo dell'intera pagina web
+$body-color:                      #1c2024; // Colore principale di tutto il testo (garantisce alto contrasto)
 // $color-background-primary-lighter: #f0f6fc; // Sfondo azzurrato usato per evidenziare blocchi di contenuto o form
 // $color-background-primary-dark:    #002d5a; // Sfondo blu scuro profondo per l'Header istituzionale o il Footer
 // $color-text-primary-hover:        #004080; // Colore dei link/testi primari quando l'utente passa il mouse

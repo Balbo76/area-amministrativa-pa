@@ -1,28 +1,28 @@
-@extends('layouts.admin')
+@extends('private.layout.admin-layout')
 @section('title', 'Pannello di controllo')
 @section('page-title', 'Dashboard Amministrativa')
 @section('content')
     <div class="row">
         <div class="alert alert-danger" role="alert">
-            <x-pc-icon name="rischio-meteo" size="icon-lg" class="me-2" />
+            <x-pc-icon name="rischio-meteo" size="icon-lg" class="me-2"/>
             <strong>Allerta Critica:</strong> È in corso un evento meteo intenso sulle zone montane.
         </div>
     </div>
 
     <button type="button" class="btn btn-primary btn-icon">
-        <x-pc-icon name="diventa-volontario" size="icon-sm" class="icon-white" />
+        <x-pc-icon name="diventa-volontario" size="icon-sm" class="icon-white"/>
         <span>Unisciti ai volontari</span>
     </button>
 
     <div class="alert alert-danger" role="alert">
-        <x-pc-icon name="rischio-meteo" size="icon-lg" class="me-2" />
+        <x-pc-icon name="rischio-meteo" size="icon-lg" class="me-2"/>
         <strong>Allerta Critica:</strong> È in corso un evento meteo intenso sulle zone montane.
     </div>
 
     <ul class="link-list">
         <li>
             <a class="list-item" href="#mappa-aree">
-                <x-pc-icon name="area-attesa" size="icon-md" style="color: var(--pc-blue);" class="me-3" />
+                <x-pc-icon name="area-attesa" size="icon-md" style="color: var(--pc-blue);" class="me-3"/>
                 <span>Trova l'Area di Attesa più vicina a casa tua</span>
             </a>
         </li>

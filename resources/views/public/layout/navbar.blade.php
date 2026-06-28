@@ -10,23 +10,29 @@
                            title="Vai al portale Protezione Civile Veneto">Regione del Veneto - Protezione Civile</a>
                         <div class="it-header-slim-right-zone" role="navigation">
                             <div class="nav-item dropdown">
-                                <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                                        aria-expanded="false" aria-controls="languages" aria-haspopup="true">
-                                    <span class="visually-hidden">Lingua attiva:</span>
-                                    <span>ITA</span>
-                                    <svg class="icon icon-sm icon-white align-top">
-                                        <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                    </svg>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="rounded-icon" aria-hidden="true">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                                      </svg>
+                                    </span>
+                                    Accedi
                                 </button>
+
                                 <div class="dropdown-menu">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="link-list-wrapper">
                                                 <ul class="link-list">
-                                                    <li><a class="dropdown-item list-item" href="#"><span>ITA <span
-                                                                    class="visually-hidden">selezionata</span></span></a>
+                                                    <li>
+                                                        <a class="dropdown-item list-item" href="{{ url('/login') }}">
+                                                            <span>Applicativi</span>
+                                                        </a>
                                                     </li>
-                                                    <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a>
+                                                    <li>
+                                                        <a class="dropdown-item list-item" href="#">
+                                                            <span>Percezione Sismica</span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -34,15 +40,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="btn btn-primary btn-icon btn-full" href="{{ route('login') }}"
-                               data-element="personal-area-login">
-                            <span class="rounded-icon" aria-hidden="true">
-                              <svg class="icon icon-primary">
-                                <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
-                              </svg>
-                            </span>
-                                <span class="d-none d-lg-block">Accedi all'area personale</span>
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -57,12 +55,10 @@
                     <div class="col-12">
                         <div class="it-header-center-content-wrapper">
                             <div class="it-brand-wrapper">
-                                <a href="/">
-                                    <img src="/build/assets/logo_protezione_civile_italiana.png" alt="" class="icon icon-xs">
-                                    <img src="/build/assets/logo_regione_del_veneto.png" alt="" class="icon icon-xs">
-                                    <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xs">
+                                <a href="{{ url('/') }}" data-focus-mouse="false">
+                                    <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xl">
                                     <div class="it-brand-text">
-                                        <div class="it-brand-title">Protezione Civile Veneto</div>
+                                        <h2 class="it-brand-title">Protezione Civile Veneto</h2>
                                     </div>
                                 </a>
                             </div>

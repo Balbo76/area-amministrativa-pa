@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('private.layout.admin-layout')
 @section('title', 'Mio Profilo')
 @section('page-title', 'Impostazioni Profilo')
 @section('content')

@@ -7,12 +7,15 @@
                     <div class="col-sm-12">
                         <div class="it-brand-wrapper">
                             <a href="{{ url('/') }}" data-focus-mouse="false">
-                                <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xl">
-                                <div class="it-brand-text">
-                                    <h2>Protezione Civile Veneto</h2>
-                                    <h3 class="d-none d-md-block">Direzione Protezione Civile e Polizia Locale - Ufficio Pianificazione</h3>
 
+                                <img src="/build/assets/logo_protezione_civile_italiana.png" alt="" class="icon icon-xs">
+                                <img src="/build/assets/logo_regione_del_veneto.png" alt="" class="icon icon-xs">
+                                <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xs">
+                                <div class="it-brand-text">
+                                    <h2 class="it-brand-title">Protezione Civile Veneto</h2>
+                                    <h3 class="it-brand-text d-none d-md-block">Direzione Protezione Civile e Polizia Locale - Ufficio Pianificazione</h3>
                                 </div>
+
                             </a>
                         </div>
                     </div>

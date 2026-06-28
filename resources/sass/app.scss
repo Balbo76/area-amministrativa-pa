@@ -1,3 +1,8 @@
 $font-path: '/bootstrap-italia/dist/fonts';
 @import "variables";
 @import 'bootstrap-italia/src/scss/bootstrap-italia';
+
+.it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .icon.icon-xs {
+    width: 64px!important;
+    height: auto!important;
+}
