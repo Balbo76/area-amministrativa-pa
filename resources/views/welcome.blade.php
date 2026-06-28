@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuto - Portale Istituzionale</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/build/assets/logo-PC-Veneto.png">
+        <title>Benvenuto - Portale Istituzionale</title>
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    </head>
     <body>
         @include('layouts.navbar')
 
@@ -13,7 +14,7 @@
             <div class="img-responsive-wrapper">
                 <div class="img-responsive">
                     <div class="img-wrapper">
-                        <img src="https://i.imgur.com/pZBjfau.png" title="Applicativi informatici" alt="Applicativi informatici">
+                        <img src="build/assets/pZBjfau.png" title="Applicativi informatici" alt="Applicativi informatici">
                     </div>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                
+
                             </div>
 
 

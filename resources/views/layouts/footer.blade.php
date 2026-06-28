@@ -7,9 +7,7 @@
                     <div class="col-sm-12">
                         <div class="it-brand-wrapper">
                             <a href="{{ url('/') }}" data-focus-mouse="false">
-                                <svg class="icon">
-                                    <use href="{{ asset('bootstrap-italia/dist/svg/sprites.svg#it-code-circle') }}"></use>
-                                </svg>
+                                <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xl">
                                 <div class="it-brand-text">
                                     <h2>Protezione Civile Veneto</h2>
                                     <h3 class="d-none d-md-block">Direzione Protezione Civile e Polizia Locale - Ufficio Pianificazione</h3>

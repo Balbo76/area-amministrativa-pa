@@ -1,5 +1,132 @@
-$primary: #005a9c;
-$success: #1d7a34;
-$warning: #e07000;
-$border-radius: 1rem;
-$table-cell-padding-y: 0.5rem;
+:root {
+    /* BLU ISTITUZIONALE (Pantone 2945 C) - Colore Principale */
+    --pc-blue-rgb: 0, 76, 151;
+    --pc-blue: rgba(var(--pc-blue-rgb), 1);      /* HEX #004C97 */
+
+    /* ARANCIONE (Pantone 1505 C) - Colore di Accento */
+    --pc-orange-rgb: 255, 105, 0;
+    --pc-orange: rgba(var(--pc-orange-rgb), 1);  /* HEX #FF6900 */
+
+    /* GIALLO ALTA VISIBILITÀ (Pantone 115 C) - Stato/Alert */
+    --pc-yellow-rgb: 253, 218, 36;
+    --pc-yellow: rgba(var(--pc-yellow-rgb), 1);  /* HEX #FDDA24 */
+}
+
+
+// ==============================================================================
+// 🇮🇹 TEMPLATE SCSS QUASI COMPLETO - CONFIGURAZIONE BOOTSTRAP ITALIA
+// ==============================================================================
+// Istruzioni: Decommenta (rimuovi //) solo le righe che desideri personalizzare.
+// I valori indicati sono quelli di default o esempi standard per il Design System.
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 🧩 1. GENERAZIONE DEL BLU ISTITUZIONALE (Sistema HSB)
+// ------------------------------------------------------------------------------
+// Bootstrap Italia non usa un solo colore primario fisso, ma genera una tavolozza
+// di 16 sfumature (da -80 a +80) partendo da un unico colore radice espresso in HSB.
+// Modificando questi tre valori, cambierai automaticamente tutte le varianti di blu
+// del sito (sfondi chiari, scuri, hover dei link, bottoni, ecc.).
+// $primary-h:                       211;  // Tonalità (Hue): 0-360 (211 è il blu Italia)
+// $primary-s:                       100;  // Saturazione (Saturation): 0-100
+// $primary-b:                       65;   // Luminosità (Brightness/Value): 0-100
+
+// ------------------------------------------------------------------------------
+// 🎨 2. COLORI DELLA PALETTE E STATI SEMANTICI
+// ------------------------------------------------------------------------------
+// Gestiscono i colori generali dell'applicazione e i messaggi di feedback dell'utente.
+$primary:                            #004C97;
+// $secondary:                       #5c6f84; // Colore neutro per elementi secondari (es. badge, testi d'aiuto)
+// $success:                         #00875a; // Verde per operazioni riuscite, conferme o salvataggi
+// $info:                            #007cc2; // Blu chiaro per avvisi informativi neutrali
+// $warning:                         #a85300; // Arancione/Ambra per avvertimenti o azioni reversibili
+// $danger:                          #c91c1c; // Rosso per errori bloccanti, eliminazioni o alert critici
+// $light:                           #f0f2f5; // Grigio chiarissimo per sfondi neutri o elementi secondari
+// $dark:                            #1a202c; // Antracite/Nero per testi scuri o contrasti elevati
+
+// ------------------------------------------------------------------------------
+// 🖼️ 3. TIPOGRAFIA GLOBALE (Font e Allineamenti)
+// ------------------------------------------------------------------------------
+// Definisce l'aspetto visivo di tutti i testi del portale secondo le linee guida AGID.
+$font-family-sans-serif:          "Titillium Web", Geneva, Tahoma, sans-serif; // Font principale per la lettura
+$headings-font-family:            "Lora", Georgia, serif;                     // Font graziato (Serif) per dare autorevolezza ai titoli
+$font-size-base:                  1rem;                                       // Dimensione radice del testo (di norma 16px)
+$font-weight-base:                400;                                        // Spessore del testo normale (Regular)
+$line-height-base:                1.5;                                        // Interlinea per garantire l'accessibilità e la leggibilità
+$headings-font-weight:            700;                                        // Spessore dei titoli (Bold)
+$headings-color:                  #1c2024;                                    // Colore specifico per i tag da H1 a H6
+
+// ------------------------------------------------------------------------------
+// 🎛️ 4. STRUTTURA DELLA PAGINA E SFONDI (Sfondi Semantici PA)
+// ------------------------------------------------------------------------------
+// Controlla l'aspetto cromatico macroscopico del sito e le macro-sezioni.
+// $body-bg:                         #ffffff; // Colore di sfondo dell'intera pagina web
+// $body-color:                      #1c2024; // Colore principale di tutto il testo (garantisce alto contrasto)
+// $color-background-primary-lighter: #f0f6fc; // Sfondo azzurrato usato per evidenziare blocchi di contenuto o form
+// $color-background-primary-dark:    #002d5a; // Sfondo blu scuro profondo per l'Header istituzionale o il Footer
+// $color-text-primary-hover:        #004080; // Colore dei link/testi primari quando l'utente passa il mouse
+// $color-text-primary-active:       #002d5a; // Colore dei link/testi quando vengono cliccati
+
+// ------------------------------------------------------------------------------
+// 📐 5. LAYOUT, GRIGLIA E SPAZIATURE
+// ------------------------------------------------------------------------------
+// Modifica la densità visiva del sito. Cambiando il valore di base ($spacer),
+// cambierai proporzionalmente i margini (m-*) e i padding (p-*) di tutto il progetto.
+// $spacer:                          1rem;    // Misura base (16px). Moltiplicata genera gli spazi (es. .mt-3 = 48px)
+// $grid-columns:                    12;      // Numero di colonne del sistema a griglia (Flexbox/Grid)
+// $grid-gutter-width:               1.5rem;  // Spazio vuoto (canale) tra una colonna e l'altra (24px)
+
+// ------------------------------------------------------------------------------
+// 🔲 6. BORDI E ANGOLI ARROTONDATI (Radius)
+// ------------------------------------------------------------------------------
+// Definisce la durezza geometrica dell'interfaccia. Utile se vuoi un design più squadrato o più morbido.
+// $border-width:                    1px;     // Spessore standard delle linee di divisione e dei bordi
+// $border-color:                    #e6e6e6; // Colore grigio chiaro per separatori e contorni discreti
+// $border-radius:                   0.25rem; // Smussatura degli angoli dei bottoni e dei piccoli componenti (4px)
+// $border-radius-sm:                0.2rem;  // Smussatura ridotta per elementi molto piccoli
+// $border-radius-lg:                0.5rem;  // Smussatura accentuata usata per Card, finestre di dialogo e moduli (8px)
+
+// ------------------------------------------------------------------------------
+// ⚡ 7. BOTTONI (Buttons)
+// ------------------------------------------------------------------------------
+// Regola l'aspetto dei pulsanti di azione primari e secondari.
+// $btn-padding-y:                   0.5rem;  // Distanza interna verticale del testo dal bordo del bottone
+// $btn-padding-x:                   1rem;    // Distanza interna orizzontale del testo dal bordo del bottone
+// $btn-font-weight:                 600;     // Testo leggermente più spesso (Semi-bold) per i bottoni per aumentarne la visibilità
+// $btn-border-width:                2px;     // Bootstrap Italia predilige bordi marcati per i bottoni in stile "outline"
+
+// ------------------------------------------------------------------------------
+// 📝 8. CAMPI DI INPUT E FORM
+// ------------------------------------------------------------------------------
+// Personalizza i moduli di contatto, i campi di testo e le aree di inserimento dati.
+// $input-padding-y:                 0.375rem;// Spazio verticale interno ai campi di testo
+// $input-bg:                        #ffffff; // Colore di sfondo delle caselle di testo
+// $input-color:                     #1c2024; // Colore del testo digitato dall'utente
+// $input-border-color:              #ced4da; // Colore del bordo del campo in stato di riposo
+// $input-focus-bg:                  #ffffff; // Sfondo del campo quando l'utente ci sta digitando dentro
+// $input-focus-border-color:        #86b7fe; // Colore del bordo del campo quando è attivo (Focus)
+// $input-placeholder-color:         #6c757d; // Colore del testo segnaposto temporaneo (Placeholder)
+
+// ------------------------------------------------------------------------------
+// 🏢 9. COMPONENTI SPECIFICI DI BOOTSTRAP ITALIA (Card, Dropdown, Modali)
+// ------------------------------------------------------------------------------
+// Modifica gli sfondi interni dei singoli moduli dell'interfaccia per staccarli dal fondo pagina.
+// $card-bg:                          #ffffff; // Sfondo dei blocchi di contenuto (Card)
+// $card-spacer-x:                    1.25rem; // Padding interno orizzontale delle Card
+// $dropdown-bg:                      #ffffff; // Sfondo del pannello dei menu a tendina
+// $dropdown-link-color:              #1c2024; // Colore dei testi delle voci del menu a tendina
+// $dropdown-link-hover-bg:           #f0f6fc; // Sfondo della voce di menu quando ci si passa sopra con il mouse
+// $modal-content-bg:                 #ffffff; // Sfondo della finestra modale popup
+// $modal-backdrop-bg:                #000000; // Colore del velo scuro che copre il sito dietro alla modale
+// $modal-backdrop-opacity:           0.5;     // Trasparenza del velo scuro dietro alla modale
+// $table-bg:                         #ffffff; // Sfondo delle righe delle tabelle di dati
+// $table-striped-bg:                 #f9f9f9; // Sfondo alternato per le righe delle tabelle ad effetto "zebra"
+
+// ==============================================================================
+// 🚀 COMPILAZIONE CORE DI BOOTSTRAP ITALIA
+// ==============================================================================
+// Questo comando unisce le tue personalizzazioni (se decommentate) al motore
+// del framework, generando il CSS finale pronto per il browser della PA.
+
+
+
