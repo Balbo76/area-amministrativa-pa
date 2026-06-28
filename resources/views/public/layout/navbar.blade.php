@@ -56,7 +56,7 @@
                         <div class="it-header-center-content-wrapper">
                             <div class="it-brand-wrapper">
                                 <a href="{{ url('/') }}" data-focus-mouse="false">
-                                    <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon icon-xl">
+                                    <img src="/build/assets/logo-PC-Veneto.png" alt="" class="icon">
                                     <div class="it-brand-text">
                                         <h2 class="it-brand-title">Protezione Civile Veneto</h2>
                                     </div>
