@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LegacyAppController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 
@@ -28,6 +29,14 @@ Route::prefix('admin')->group(function () {
     Route::get('/dashboard', function () { return view('private.dashboard'); })->name('admin.dashboard');
     Route::get('/profile', function () { return view('private.profile'); })->name('admin.profile');
     Route::get('/pc-icons', function () { return view('private.pc-icons'); })->name('admin.pc-icons');
+
+    Route::any('/pippo/{path?}', [LegacyAppController::class, 'handlePippo'])
+        ->where('path', '.*')
+        // ->middleware(['web', 'auth'])
+    ;
+
+
+
 });
 
 
